@@ -12,10 +12,26 @@ export const ContactSection: React.FC = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   console.log('Form submitted:', formData);
+  // };
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const res = await fetch('/api/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(formData),
+  });
+
+  if (res.ok) {
+    alert('Message sent successfully!');
+    setFormData({ name: '', email: '', phone: '', message: '' });
+  } else {
+    alert('Something went wrong. Please try again.');
+  }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
