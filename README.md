@@ -119,11 +119,6 @@ Edit `/data/projects.ts` to add or modify projects:
 - **Experience:** Edit `/components/sections/experience-section.tsx`
 - **Skills:** Edit `/components/sections/skills-section.tsx`
 
-## Build Output
-
-- All pages are statically generated
-- Optimized bundle size
-- Fast page loads with code splitting
 
 ## Browser Support
 

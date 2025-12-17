@@ -1,6 +1,7 @@
 import React from 'react';
 import { GraduationCap, Award, Code2, Database, Layers, PenTool } from 'lucide-react';
 import { Section, SectionHeader } from '../ui/section';
+// import Link from 'next/link';
 
 const certifications = [
   {
@@ -16,6 +17,7 @@ const certifications = [
     subtitle: 'Professional Certification',
     badge: 'Certified',
     gradient: 'from-orange-400 to-red-500',
+    url: 'https://drive.google.com/file/d/1O8Zp_92sYyX0L63HZIJnPEXtzJ73QVCo/view?usp=sharing',
   },
   {
     icon: Code2,
@@ -23,6 +25,7 @@ const certifications = [
     subtitle: 'Advanced JavaScript Certification',
     badge: 'Certified',
     gradient: 'from-yellow-400 to-orange-500',
+    url : 'https://drive.google.com/file/d/1xg8OiPlWAW0xxAIK2dFstelh4b6mfEfG/view?usp=sharing'
   },
   {
     icon: Layers,
@@ -30,6 +33,7 @@ const certifications = [
     subtitle: 'Full-Stack Development',
     badge: 'Certified',
     gradient: 'from-green-400 to-teal-500',
+    url: 'https://drive.google.com/file/d/1d1OTgjRg1T7scVyQF6TpshTjmqxjYVT5/view?usp=sharing'
   },
   {
     icon: PenTool,
@@ -37,6 +41,7 @@ const certifications = [
     subtitle: 'User Experience Design',
     badge: 'Certified',
     gradient: 'from-pink-400 to-purple-500',
+    url: 'https://drive.google.com/file/d/17BqArGsB3Q9vHgdo-ycsL0R8TNhcdjCl/view?usp=sharing'
   },
   {
     icon: Database,
@@ -44,6 +49,7 @@ const certifications = [
     subtitle: 'Database Design & Implementation',
     badge: 'Certified',
     gradient: 'from-cyan-400 to-blue-500',
+    url: 'https://drive.google.com/file/d/1HoQ2kU3az_YCi3kRiZfJl7hTrKMGhQQd/view?usp=sharing'
   },
 ];
 
@@ -74,7 +80,9 @@ export const EducationSection: React.FC = () => {
 
               <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-2 rounded-full text-sm font-semibold">
                 <Award className="w-4 h-4" />
-                {cert.badge}
+                <a href={cert.url} target='_blank' className="hover:underline">
+                  {cert.badge}
+                </a>
               </div>
             </div>
           );

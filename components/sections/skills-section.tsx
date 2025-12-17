@@ -26,6 +26,7 @@ const skillCategories = [
       'REST APIs',
       'Git/GitHub',
       'cPanel',
+      'N8N & Automation',
     ],
   },
   {
@@ -76,7 +77,7 @@ export const SkillsSection: React.FC = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-4 py-2 bg-gradient-to-r from-blue-50 to-purple-50 text-blue-600 rounded-full text-sm font-semibold hover:bg-blue-600 hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-default"
+                    className="px-4 py-2 bg-gradient-to-r from-blue-50 to-purple-50 text-blue-600 rounded-full text-sm font-semibold hover:bg-blue-600 hover:text-black hover:-translate-y-1 transition-all duration-300 cursor-default"
                   >
                     {skill}
                   </span>

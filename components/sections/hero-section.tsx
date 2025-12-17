@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { Briefcase, Send, ChevronDown, UserCircle2 } from 'lucide-react';
+import React from "react";
+import { Briefcase, Send, ChevronDown, UserCircle2 } from "lucide-react";
 
 export const HeroSection: React.FC = () => {
   const scrollToProjects = () => {
-    const projectsSection = document.querySelector('#projects');
+    const projectsSection = document.querySelector("#projects");
     if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' });
+      projectsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const scrollToContact = () => {
-    const contactSection = document.querySelector('#contact');
+    const contactSection = document.querySelector("#contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -41,12 +41,14 @@ export const HeroSection: React.FC = () => {
 
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Full-Stack Web Developer
+            Front-End Developer · React & Next.js
           </span>
         </h2>
 
-        <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
-          Front-End & WordPress Specialist | Laravel Enthusiast
+        <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
+          Building high-performance, SEO-optimized web experiences with modern
+          JavaScript, scalable UI architecture, and conversion-focused eCommerce
+          solutions.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
