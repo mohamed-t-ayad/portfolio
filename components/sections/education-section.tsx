@@ -55,7 +55,7 @@ const certifications = [
 
 export const EducationSection: React.FC = () => {
   return (
-    <Section id="education">
+    <Section id="education" gray>
       <SectionHeader tag="Qualifications" title="Education & Certifications" />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

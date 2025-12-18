@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectCard } from '@/components/ui/project-card';
+import { ProjectFilter } from '@/components/ui/ProjectFilter';
 import { Section, SectionHeader } from '@/components/ui/section';
 import { getAllProjects } from '@/data/projects';
 
@@ -19,11 +19,7 @@ export default function ProjectsPage() {
           title="All Projects"
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} showUrl />
-          ))}
-        </div>
+        <ProjectFilter projects={projects} />
       </Section>
     </div>
   );

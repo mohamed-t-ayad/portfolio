@@ -1,21 +1,29 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
-  Code2, Home, User, Briefcase, Rocket, CodeIcon,
-  GraduationCap, Mail, Menu, X
-} from 'lucide-react';
+  Code2,
+  Home,
+  User,
+  Briefcase,
+  Rocket,
+  CodeIcon,
+  GraduationCap,
+  Mail,
+  Menu,
+  X,
+} from "lucide-react";
 
 const navLinks = [
-  { href: '/', label: 'Home', icon: Home },
-  { href: '#about', label: 'About', icon: User },
-  { href: '#experience', label: 'Experience', icon: Briefcase },
-  { href: '/projects', label: 'Projects', icon: Rocket },
-  { href: '#skills', label: 'Skills', icon: CodeIcon },
-  { href: '#education', label: 'Education', icon: GraduationCap },
-  { href: '#contact', label: 'Contact', icon: Mail },
+  { href: "/", label: "Home", icon: Home },
+  { href: "#about", label: "About", icon: User },
+  { href: "#experience", label: "Experience", icon: Briefcase },
+  { href: "/projects", label: "Projects", icon: Rocket },
+  { href: "#skills", label: "Skills", icon: CodeIcon },
+  { href: "#education", label: "Education", icon: GraduationCap },
+  { href: "#contact", label: "Contact", icon: Mail },
 ];
 
 export const Navbar: React.FC = () => {
@@ -28,17 +36,22 @@ export const Navbar: React.FC = () => {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleLinkClick = (href: string) => {
     setIsMobileMenuOpen(false);
 
-    if (href.startsWith('#')) {
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+    if (href.startsWith("#")) {
+      if (pathname !== "/") {
+        // Navigate to home page first, then scroll
+        window.location.href = `/${href}`;
+      } else {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
       }
     }
   };
@@ -47,8 +60,8 @@ export const Navbar: React.FC = () => {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? 'py-3 bg-white/90 backdrop-blur-xl shadow-lg'
-          : 'py-5 bg-white/90 backdrop-blur-xl shadow-sm'
+          ? "py-3 bg-white/90 backdrop-blur-xl shadow-lg"
+          : "py-5 bg-white/90 backdrop-blur-xl shadow-sm"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -68,11 +81,13 @@ export const Navbar: React.FC = () => {
 
               return (
                 <li key={link.href}>
-                  {link.href.startsWith('#') ? (
+                  {link.href.startsWith("#") ? (
                     <button
                       onClick={() => handleLinkClick(link.href)}
                       className={`flex items-center gap-2 font-medium transition-all duration-300 relative group ${
-                        isActive ? 'text-blue-600' : 'text-gray-900 hover:text-blue-600'
+                        isActive
+                          ? "text-blue-600"
+                          : "text-gray-900 hover:text-blue-600"
                       }`}
                     >
                       <Icon className="w-4 h-4 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
@@ -83,7 +98,9 @@ export const Navbar: React.FC = () => {
                     <Link
                       href={link.href}
                       className={`flex items-center gap-2 font-medium transition-all duration-300 relative group ${
-                        isActive ? 'text-blue-600' : 'text-gray-900 hover:text-blue-600'
+                        isActive
+                          ? "text-blue-600"
+                          : "text-gray-900 hover:text-blue-600"
                       }`}
                     >
                       <Icon className="w-4 h-4 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
@@ -100,7 +117,11 @@ export const Navbar: React.FC = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden text-gray-900 hover:text-blue-600 transition-colors"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -113,13 +134,13 @@ export const Navbar: React.FC = () => {
 
                 return (
                   <li key={link.href}>
-                    {link.href.startsWith('#') ? (
+                    {link.href.startsWith("#") ? (
                       <button
                         onClick={() => handleLinkClick(link.href)}
                         className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all ${
                           isActive
-                            ? 'bg-blue-50 text-blue-600'
-                            : 'text-gray-900 hover:bg-gray-50'
+                            ? "bg-blue-50 text-blue-600"
+                            : "text-gray-900 hover:bg-gray-50"
                         }`}
                       >
                         <Icon className="w-5 h-5" />
@@ -131,8 +152,8 @@ export const Navbar: React.FC = () => {
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all ${
                           isActive
-                            ? 'bg-blue-50 text-blue-600'
-                            : 'text-gray-900 hover:bg-gray-50'
+                            ? "bg-blue-50 text-blue-600"
+                            : "text-gray-900 hover:bg-gray-50"
                         }`}
                       >
                         <Icon className="w-5 h-5" />

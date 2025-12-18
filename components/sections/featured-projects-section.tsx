@@ -9,7 +9,7 @@ export const FeaturedProjectsSection: React.FC = () => {
   const featuredProjects = getFeaturedProjects().slice(0, 4);
 
   return (
-    <Section id="projects">
+    <Section id="projects" className="bg-gray-50">
       <SectionHeader tag="My Work" title="Featured Projects" />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">

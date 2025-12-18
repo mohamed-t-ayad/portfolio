@@ -35,9 +35,10 @@ const skillCategories = [
     skills: [
       'Custom Themes',
       'Elementor',
+      'SEO',
       'WooCommerce',
       'WP Rocket',
-      'SEO',
+      
     ],
   },
   {
@@ -45,7 +46,6 @@ const skillCategories = [
     title: 'Deployment & Hosting',
     skills: [
       'Vercel',
-      'Netlify',
       'DNS Setup',
       'Migrations',
     ],
@@ -54,7 +54,7 @@ const skillCategories = [
 
 export const SkillsSection: React.FC = () => {
   return (
-    <Section id="skills" gray>
+    <Section id="skills" >
       <SectionHeader tag="What I Do" title="Skills & Expertise" />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -44,8 +44,8 @@ export const ContactSection: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'ayadm536@gmail.com',
-      href: 'mailto:ayadm536@gmail.com',
+      value: 'contact@mohamedayad.com',
+      href: 'mailto:contact@mohamedayad.com',
       gradient: 'from-blue-500 to-cyan-500',
     },
     {

@@ -54,7 +54,7 @@ export const Testimonials: React.FC = () => {
   };
 
   return (
-    <Section id="testimonials" className='bg-[#fffcfc]'>
+    <Section id="testimonials" >
       <SectionHeader tag="Testimonials" title="What Clients Say About My Work" />
 
       <div className="relative w-full py-8">
@@ -65,7 +65,7 @@ export const Testimonials: React.FC = () => {
           >
             {testimonials.map((testimonial, idx) => (
               <div key={idx} className="flex-none w-full sm:w-3/4 md:w-1/2 lg:w-1/3 px-4">
-                <div className="bg-white p-8 rounded-3xl text-center h-full flex flex-col justify-between
+                <div className="bg-gray-50 p-8 rounded-3xl text-center h-full flex flex-col justify-between
                                 hover:bg-blue-50 hover:shadow-md hover:-translate-y-2 transition-all duration-300">
                   <p className="text-gray-700 mb-4">{testimonial.quote}</p>
                   <div className="flex justify-center mb-4">
