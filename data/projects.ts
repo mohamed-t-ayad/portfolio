@@ -28,18 +28,26 @@ export const projects: Project[] = [
     url: "https://mark.haykalah.com",
     featured: true,
   },
-  {
-    id: "gamila-store",
-    title: "Gamila Store",
+   {
+    id: "femu-store",
+    title: "FEMU Store",
     description:
-      "E-commerce platform offering essential care products for women, built with Shopify Liquid.",
-    company: "Gamila",
-    technologies: ["Shopify", "E-commerce", "Product Management"],
+      "Shopify e-commerce store for cosmetics products, featuring custom Liquid development with reusable sections and snippets, advanced theme customization, custome bundel offers, and secure payment integration.",
+    company: "FEMU",
+    technologies: [
+      "Shopify",
+      "Liquid",
+      "E-commerce",
+      "Custom Sections",
+      "Theme Customization",
+      "AI Integration",
+    ],
+
     category: "E-commerce",
-    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-    logo: "images/projects/gamila.me-logo.png",
-    url: "https://gamila.me",
-    featured: false,
+    gradient: "linear-gradient(135deg, #f83600 0%, #f9d423 100%)",
+    logo: "images/projects/FEMU.png",
+    url: "https://femu.me/",
+    featured: true,
   },
   {
     id: "torino-elevators",
@@ -59,6 +67,71 @@ export const projects: Project[] = [
     logo: "images/projects/torino_logo.png",
     url: "https://torinoelevators.com",
     featured: true,
+  },
+  {
+    id: "nasig-masr",
+    title: "Nasig Masr",
+    description:
+      "Shopify-based e-commerce store for home textiles and furnishings, including product organization, theme customization, and performance optimization.",
+    company: "Nasig Masr",
+    technologies: ["Shopify", "E-commerce", "Theme Customization"],
+    category: "E-commerce",
+    gradient: "linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%)",
+    logo: "images/projects/nasigmasr.png",
+    url: "https://nasigmasr.com/",
+    featured: false,
+  },
+  {
+    id: "fina-haykalah",
+    title: "Fina Haykalah",
+    description:
+      "Modern bilingual portfolio website built with Next.js, focusing on clean UI, performance optimization, and SEO-friendly structure.",
+    company: "Fina",
+    technologies: ["Next.js", "React", "Bilingual", "SEO"],
+    category: "Next.js",
+    gradient: "linear-gradient(135deg, #4568dc 0%, #b06ab3 100%)",
+    logo: "images/projects/fina_logo.svg",
+    url: "https://fina.haykalah.com/",
+    featured: true,
+  },
+  {
+    id: "Haykalah",
+    title: "Haykalah",
+    description:
+      "Modern bilingual portfolio website built with Next.js, focusing on clean UI, performance optimization, and SEO-friendly structure.",
+    company: "Haykalah",
+    technologies: ["Next.js", "React", "Bilingual", "SEO"],
+    category: "Next.js",
+    gradient: "linear-gradient(135deg, #4568dc 0%, #b06ab3 100%)",
+    logo: "images/projects/Haykalah-logo.png",
+    url: "https://haykalah.com/",
+    featured: false,
+  },
+  {
+    id: "sami-eltamawy",
+    title: "Sami Eltamawy",
+    description:
+      "Modern personal branding website built with WordPress and Elementor, focused on clean design, responsiveness, and easy content management.",
+    company: "Sami Eltamawy",
+    technologies: ["WordPress", "Elementor", "Responsive Design"],
+    category: "WordPress",
+    gradient: "linear-gradient(135deg, #232526 0%, #414345 100%)",
+    logo: "images/projects/samieltamawy.webp",
+    url: "https://www.samieltamawy.com/",
+    featured: false,
+  },
+  {
+    id: "gamila-store",
+    title: "Gamila Store",
+    description:
+      "E-commerce platform offering essential care products for women, built with Shopify Liquid.",
+    company: "Gamila",
+    technologies: ["Shopify", "E-commerce", "Product Management"],
+    category: "E-commerce",
+    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    logo: "images/projects/gamila.me-logo.png",
+    url: "https://gamila.me",
+    featured: false,
   },
   {
     id: "modely-landing",
@@ -118,27 +191,6 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: "femu-store",
-    title: "FEMU Store",
-    description:
-      "Shopify e-commerce store for cosmetics products, featuring custom Liquid development with reusable sections and snippets, advanced theme customization, custome bundel offers, and secure payment integration.",
-    company: "FEMU",
-    technologies: [
-      "Shopify",
-      "Liquid",
-      "E-commerce",
-      "Custom Sections",
-      "Theme Customization",
-      "AI Integration",
-    ],
-
-    category: "E-commerce",
-    gradient: "linear-gradient(135deg, #f83600 0%, #f9d423 100%)",
-    logo: "images/projects/FEMU.png",
-    url: "https://femu.me/",
-    featured: true,
-  },
-  {
     id: "gamila-zid",
     title: "Gamila (Zid Store)",
     description:
@@ -152,19 +204,6 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: "nasig-masr",
-    title: "Nasig Masr",
-    description:
-      "Shopify-based e-commerce store for home textiles and furnishings, including product organization, theme customization, and performance optimization.",
-    company: "Nasig Masr",
-    technologies: ["Shopify", "E-commerce", "Theme Customization"],
-    category: "E-commerce",
-    gradient: "linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%)",
-    logo: "images/projects/nasigmasr.png",
-    url: "https://nasigmasr.com/",
-    featured: false,
-  },
-  {
     id: "eye-language",
     title: "Eye Language",
     description:
@@ -175,19 +214,6 @@ export const projects: Project[] = [
     gradient: "linear-gradient(135deg, #56ccf2 0%, #2f80ed 100%)",
     logo: "images/projects/eyelanguage.jpg",
     url: "https://shop.eyelanguage.sa/",
-    featured: false,
-  },
-  {
-    id: "Haykalah",
-    title: "Fina Haykalah",
-    description:
-      "Modern bilingual portfolio website built with Next.js, focusing on clean UI, performance optimization, and SEO-friendly structure.",
-    company: "Haykalah",
-    technologies: ["Next.js", "React", "Bilingual", "SEO"],
-    category: "Next.js",
-    gradient: "linear-gradient(135deg, #4568dc 0%, #b06ab3 100%)",
-    logo: "images/projects/Haykalah-logo.png",
-    url: "https://haykalah.com/",
     featured: false,
   },
   {
@@ -239,19 +265,7 @@ export const projects: Project[] = [
     url: "https://creative.mohamedayad.com/",
     featured: false,
   },
-  {
-    id: "sami-eltamawy",
-    title: "Sami Eltamawy",
-    description:
-      "Modern personal branding website built with WordPress and Elementor, focused on clean design, responsiveness, and easy content management.",
-    company: "Sami Eltamawy",
-    technologies: ["WordPress", "Elementor", "Responsive Design"],
-    category: "WordPress",
-    gradient: "linear-gradient(135deg, #232526 0%, #414345 100%)",
-    logo: "images/projects/samieltamawy.webp",
-    url: "https://www.samieltamawy.com/",
-    featured: false,
-  },
+  
   {
     id: "mega-agency",
     title: "Mega Agency",
@@ -290,19 +304,7 @@ export const projects: Project[] = [
     url: "https://mohamedayad.com/ToDo-App/",
     featured: false,
   },
-  {
-    id: "fina-haykalah",
-    title: "Fina Haykalah",
-    description:
-      "Modern bilingual portfolio website built with Next.js, focusing on clean UI, performance optimization, and SEO-friendly structure.",
-    company: "Fina",
-    technologies: ["Next.js", "React", "Bilingual", "SEO"],
-    category: "Next.js",
-    gradient: "linear-gradient(135deg, #4568dc 0%, #b06ab3 100%)",
-    logo: "images/projects/fina_logo.svg",
-    url: "https://fina.haykalah.com/",
-    featured: true,
-  },
+  
   {
     id: "yakuot",
     title: "Yakuot Store",
