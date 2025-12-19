@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import { Code2, Linkedin, Github, MessageCircle } from 'lucide-react';
+import React from "react";
+import Link from "next/link";
+import { Code2, Linkedin, Github, MessageCircle, Mail } from "lucide-react";
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -10,44 +10,96 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
           <div className="text-center md:text-left">
-            <Link href="/" className="flex items-center gap-2 text-white text-2xl font-bold mb-4 justify-center md:justify-start">
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-white text-2xl font-bold mb-4 justify-center md:justify-start"
+            >
               <Code2 className="w-7 h-7" />
               <span>Mohamed Ayad</span>
             </Link>
             <p className="text-gray-400 max-w-sm">
-              Building exceptional web experiences with modern technologies
+              Front-End & eCommerce Developer building high-converting stores,
+              scalable web applications, and smart automation workflows using
+              modern technologies and <span className="text-gray-300">n8n</span>.
             </p>
           </div>
-
+          
           <div className="flex items-center gap-4">
-            <a
-              href="https://www.linkedin.com/in/mohamed-ayad-294295130/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-600 transition-all duration-300 hover:-translate-y-1"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a
-              href="https://github.com/mohamed-t-ayad"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-600 transition-all duration-300 hover:-translate-y-1"
-              aria-label="GitHub"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a
-              href="https://wa.me/201092869837"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-blue-600 transition-all duration-300 hover:-translate-y-1"
-              aria-label="WhatsApp"
-            >
-              <MessageCircle className="w-5 h-5" />
-            </a>
-          </div>
+  {/* Email */}
+  <div className="relative group">
+    <a
+      href="mailto:contact@mohamedayad.com"
+      className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full
+      hover:bg-blue-600 transition-all duration-300 hover:-translate-y-1"
+      aria-label="Email"
+    >
+      <Mail className="w-5 h-5" />
+    </a>
+    <span className="absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap
+      bg-black text-white text-xs px-2 py-1 rounded opacity-0
+      group-hover:opacity-100 transition-opacity duration-300">
+      Email
+    </span>
+  </div>
+
+  {/* LinkedIn */}
+  <div className="relative group">
+    <a
+      href="https://www.linkedin.com/in/mohamed-ayad-294295130/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full
+      hover:bg-[#0A66C2] transition-all duration-300 hover:-translate-y-1"
+      aria-label="LinkedIn"
+    >
+      <Linkedin className="w-5 h-5" />
+    </a>
+    <span className="absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap
+      bg-black text-white text-xs px-2 py-1 rounded opacity-0
+      group-hover:opacity-100 transition-opacity duration-300">
+      LinkedIn
+    </span>
+  </div>
+
+  {/* GitHub */}
+  <div className="relative group">
+    <a
+      href="https://github.com/mohamed-t-ayad"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full
+      hover:bg-gray-900 transition-all duration-300 hover:-translate-y-1"
+      aria-label="GitHub"
+    >
+      <Github className="w-5 h-5" />
+    </a>
+    <span className="absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap
+      bg-black text-white text-xs px-2 py-1 rounded opacity-0
+      group-hover:opacity-100 transition-opacity duration-300">
+      GitHub
+    </span>
+  </div>
+
+  {/* WhatsApp */}
+  <div className="relative group">
+    <a
+      href="https://wa.me/201092869837"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full
+      hover:bg-[#25D366] transition-all duration-300 hover:-translate-y-1"
+      aria-label="WhatsApp"
+    >
+      <MessageCircle className="w-5 h-5" />
+    </a>
+    <span className="absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap
+      bg-black text-white text-xs px-2 py-1 rounded opacity-0
+      group-hover:opacity-100 transition-opacity duration-300">
+      WhatsApp
+    </span>
+  </div>
+</div>
+
         </div>
 
         <div className="pt-8 border-t border-white/10 text-center">

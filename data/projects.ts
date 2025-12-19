@@ -76,6 +76,7 @@ export const projects: Project[] = [
     category: "Landing Page , Front-End",
     gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
     logo: "images/projects/modely.png",
+    url: "https://mohamedayad.com/Modely/",
     featured: false,
   },
   {

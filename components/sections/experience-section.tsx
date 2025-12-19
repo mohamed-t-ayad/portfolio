@@ -79,19 +79,19 @@ export const ExperienceSection: React.FC = () => {
     <Section id="experience" gray>
       <SectionHeader tag="My Journey" title="Professional Experience" />
 
-      <div className="max-w-4xl mx-auto relative">
+      <div className="max-w-6xl mx-auto relative">
         <div className="absolute left-10 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-600 to-purple-600 rounded-full hidden md:block" />
 
         <div className="space-y-12">
           {experiences.map((exp, index) => {
             const Icon = exp.icon;
             return (
-              <div key={index} className="flex gap-8 relative group">
+              <div key={index} className="flex gap-6 sm:gap-6 md:gap-8 relative group">
                 <div className="flex-shrink-0 w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center text-blue-600 z-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                   <Icon className="w-8 h-8" />
                 </div>
 
-                <div className="flex-1 bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600 group-hover:translate-x-2 group-hover:shadow-xl transition-all duration-300">
+                <div className="flex-1 bg-white p-6 sm:p-6 md:p-6 rounded-2xl shadow-lg border-l-4 border-blue-600 group-hover:translate-x-2 group-hover:shadow-xl transition-all duration-300">
                   <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-3">
                     <Calendar className="w-4 h-4" />
                     {exp.period}

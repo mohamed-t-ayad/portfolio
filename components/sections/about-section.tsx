@@ -17,14 +17,14 @@ import { Section, SectionHeader } from "../ui/section";
 export const AboutSection: React.FC = () => {
   const stats = [
     { icon: Award, value: "4+", label: "Years Experience" },
-    { icon: FolderKanban, value: "50+", label: "Projects Completed" },
+    { icon: FolderKanban, value: "40+", label: "Projects Completed" },
     { icon: Users, value: "30+", label: "Happy Clients" },
   ];
   const CV_LINKS = {
     frontend:
-      "https://drive.google.com/file/d/1myS-kTNfIl61qnpIOaB8nsVityHahC1h/view?usp=sharing",
+      "https://drive.google.com/file/d/1hKaS8_m_mX0tIK64zQkv76gWOl4y8Qro/view?usp=sharing",
     wordpress:
-      "https://drive.google.com/file/d/19Srd-dqMps6ZOxZrCjOqXL34yfpXDApT/view?usp=sharing",
+      "https://drive.google.com/file/d/1AT9Y7pMantekSC4FoU48RGjgBkd3fb7n/view?usp=sharing",
   };
   const [open, setOpen] = useState(false);
   return (
@@ -32,12 +32,12 @@ export const AboutSection: React.FC = () => {
       <SectionHeader tag="Get to know me" title="My Experience" />
 
       <div className="grid lg:grid-cols-5 gap-16 items-center">
-        <div className="lg:col-span-2 relative">
+        <div className="lg:col-span-2 relative p-6">
           <div className="aspect-square rounded-3xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white shadow-2xl hover:scale-105 hover:rotate-3 transition-all duration-500">
             <LaptopMinimal className="w-32 h-32 md:w-40 md:h-40" />
           </div>
 
-          <div className="absolute -top-5 -right-5 w-24 h-24 bg-gradient-to-br from-pink-400 to-red-500 rounded-2xl flex items-center justify-center text-white shadow-xl animate-float">
+          <div className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:-top-5 lg:-right-5 w-24 h-24 bg-gradient-to-br from-pink-400 to-red-500 rounded-2xl flex items-center justify-center text-white shadow-xl animate-float">
             <GitBranch className="w-10 h-10" />
           </div>
         </div>
@@ -61,8 +61,10 @@ export const AboutSection: React.FC = () => {
             Alongside front-end development, I have extensive experience with
             WordPress and Shopify, developing custom themes, optimizing
             WooCommerce and Shopify stores, and building conversion-focused
-            eCommerce solutions. I work confidently with Liquid, Elementor, and
-            custom integrations to support real business goals.
+            eCommerce solutions. I also work with automation tools like{" "}
+            <span className="font-medium text-gray-800">n8n</span> to streamline
+            workflows, integrate third-party services, and reduce manual
+            operations—helping businesses save time and scale efficiently.
           </p>
 
           <p className="text-gray-600 mb-8 leading-relaxed">
