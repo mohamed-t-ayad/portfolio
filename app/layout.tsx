@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
+// import { ScrollArea } from '@/components/ui/scroll-area';
+import ScrollToTop from '@/components/layout/scroll-top';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
@@ -27,7 +29,11 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} antialiased`}>
         <Navbar />
-        <main>{children}</main>
+        <main>
+          {children}
+          {/* <ScrollArea /> */}
+          <ScrollToTop />
+        </main>
         <Footer />
       </body>
     </html>
