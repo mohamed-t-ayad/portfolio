@@ -174,7 +174,7 @@ export const projects: Project[] = [
     category: "Landing Page , Front-End",
     gradient: "linear-gradient(135deg, #667db6 0%, #0082c8 100%)",
     logo: "images/projects/hub49_logo.png",
-    url: "https://mohamedayad.com/Hub49/",
+    url: "http://ayad.cloud/Hub49/",
     featured: false,
   },
   {
