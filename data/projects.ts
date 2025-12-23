@@ -149,7 +149,7 @@ export const projects: Project[] = [
     category: "Landing Page , Front-End",
     gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
     logo: "images/projects/modely.png",
-    url: "https://mohamedayad.com/Modely/",
+    url: "http://ayad.cloud/Modely/",
     featured: false,
   },
   {
@@ -187,7 +187,7 @@ export const projects: Project[] = [
     category: "Landing Page , Front-End",
     gradient: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
     logo: "images/projects/british_institutes_group.png",
-    url: "https://mohamedayad.com/British-Institutes-Group/",
+    url: "https://ayad.cloud/British-Institutes-Group",
     featured: false,
   },
   {
@@ -237,7 +237,7 @@ export const projects: Project[] = [
     category: "Front-End",
     gradient: "linear-gradient(135deg, #434343 0%, #000000 100%)",
     logo: "images/projects/dashboard.png",
-    url: "https://mohamedayad.com/Dashboard/",
+    url: "http://ayad.cloud/Dashboard/",
     featured: false,
   },
   {
@@ -262,7 +262,7 @@ export const projects: Project[] = [
     category: "WordPress , Landing Page",
     gradient: "linear-gradient(135deg, #8360c3 0%, #2ebf91 100%)",
     logo: "images/projects/creative.svg",
-    url: "https://creative.mohamedayad.com/",
+    url: "https://creativity.ayad.cloud/",
     featured: false,
   },
   
@@ -276,7 +276,7 @@ export const projects: Project[] = [
     category: "WordPress",
     gradient: "linear-gradient(135deg, #0f2027 0%, #203a43 100%)",
     logo: "images/projects/mega.jpg",
-    url: "https://mega-agency.mohamedayad.com/",
+    url: "https://mega-agency.ayad.cloud/",
     featured: false,
   },
   {
