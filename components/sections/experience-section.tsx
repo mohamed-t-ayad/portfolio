@@ -1,62 +1,35 @@
 import React from "react";
 import {
-  LaptopMinimal,
   Briefcase,
-  Code2,
   Calendar,
+  Code2,
+  LaptopMinimal,
   ShoppingBag,
 } from "lucide-react";
 import { Section, SectionHeader } from "../ui/section";
 
-// const experiences = [
-//   {
-//     icon: LaptopMinimal,
-//     period: '2024 – Present',
-//     title: 'Full-Stack Web Developer',
-//     company: 'Mark',
-//     description: 'Delivering full-scale responsive websites for clients across various industries. Built performant web apps using React.js, Next.js (with SSR, routing, i18n), and Vercel deployment.',
-//     technologies: ['React.js', 'Next.js', 'WordPress'],
-//   },
-//   {
-//     icon: Code2,
-//     period: '2021 – Present',
-//     title: 'Freelance WordPress Developer',
-//     company: 'Freelance',
-//     description: 'Built and maintained custom WordPress websites using Elementor, ACF, and WooCommerce. Improved SEO and page speed, boosting traffic by 40% for multiple clients.',
-//     technologies: ['WordPress', 'WooCommerce', 'SEO'],
-//   },
-//   {
-//     icon: Code2,
-//     period: '2020 – Present',
-//     title: 'Freelance Front-End Developer',
-//     company: 'Freelance',
-//     description: 'Translated Figma/PSD designs into responsive, pixel-perfect HTML/CSS/JS interfaces. Integrated front-end templates with Laravel Blade and other back-end technologies.',
-//     technologies: ['HTML/CSS/JS', 'Bootstrap', 'Vue.js'],
-//   },
-// ];
 const experiences = [
   {
     icon: LaptopMinimal,
-    period: "2024 – 2025",
-    title: "Front-End & eCommerce Developer",
+    period: "2024 - 2025",
+    title: "Front-End, Full-Stack & eCommerce Developer",
     company: "Mark",
     description:
-      "Developed and maintained responsive, production-ready websites by converting UI/UX designs into scalable React.js and Next.js applications. Built and customized eCommerce stores on Shopify, Salla, and Zid, delivering performance-focused solutions and deploying projects on Vercel.",
-    technologies: ["React.js", "Next.js", "Shopify", "Salla", "Zid"],
+      "Built production-ready websites, dashboards, and full web applications for real business workflows. I worked across React.js and Next.js frontends while also delivering Node.js-powered backend logic, integrations, and scalable app architecture alongside eCommerce implementations.",
+    technologies: ["React.js", "Next.js", "Node.js", "Shopify", "Salla", "Zid"],
   },
   {
     icon: ShoppingBag,
-    period: "2022 – Present",
-    title: "Freelance eCommerce Developer",
+    period: "2022 - Present",
+    title: "Freelance eCommerce & Web App Developer",
     company: "Freelance",
     description:
-      "Developed and customized multiple eCommerce stores across Shopify, Salla, and Zid, focusing on performance, conversion optimization, and scalable store architecture. Implemented custom themes, checkout enhancements, product workflows, and third-party integrations to support business growth and operational efficiency.",
-    technologies: ["Shopify", "Salla", "Zid", "Liquid", "eCommerce"],
+      "Delivered freelance work across eCommerce stores, internal dashboards, and custom web apps. My projects included frontend implementation, dashboard interfaces, app workflows, third-party integrations, and scalable solutions tailored to how each business actually operates.",
+    technologies: ["Shopify", "Salla", "Zid", "Dashboards", "Web Apps"],
   },
-
   {
     icon: Code2,
-    period: "2021 – Present",
+    period: "2021 - Present",
     title: "Freelance WordPress Developer",
     company: "Freelance",
     description:
@@ -65,7 +38,7 @@ const experiences = [
   },
   {
     icon: Code2,
-    period: "2020 – Present",
+    period: "2020 - Present",
     title: "Freelance Front-End Developer",
     company: "Freelance",
     description:
@@ -86,7 +59,10 @@ export const ExperienceSection: React.FC = () => {
           {experiences.map((exp, index) => {
             const Icon = exp.icon;
             return (
-              <div key={index} className="flex gap-6 sm:gap-6 md:gap-8 relative group">
+              <div
+                key={index}
+                className="flex gap-6 sm:gap-6 md:gap-8 relative group"
+              >
                 <div className="flex-shrink-0 w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center text-blue-600 z-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                   <Icon className="w-8 h-8" />
                 </div>

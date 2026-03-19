@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Briefcase, Send, ChevronDown, UserCircle2 } from "lucide-react";
+import { Briefcase, ChevronDown, Send, UserCircle2 } from "lucide-react";
 
 export const HeroSection: React.FC = () => {
   const scrollToProjects = () => {

@@ -1,29 +1,27 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   Code2,
   Home,
-  User,
-  Briefcase,
-  Rocket,
-  CodeIcon,
-  GraduationCap,
   Mail,
   Menu,
+  Newspaper,
+  Rocket,
+  Settings,
+  User,
   X,
 } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
-  { href: "#about", label: "About", icon: User },
-  { href: "#experience", label: "Experience", icon: Briefcase },
+  { href: "/services", label: "Services", icon: Settings },
   { href: "/projects", label: "Projects", icon: Rocket },
-  { href: "#skills", label: "Skills", icon: CodeIcon },
-  { href: "#education", label: "Education", icon: GraduationCap },
-  { href: "#contact", label: "Contact", icon: Mail },
+  { href: "/blogs", label: "Blogs", icon: Newspaper },
+  { href: "/about", label: "About", icon: User },
+  { href: "/#contact", label: "Contact", icon: Mail },
 ];
 
 export const Navbar: React.FC = () => {
@@ -43,12 +41,13 @@ export const Navbar: React.FC = () => {
   const handleLinkClick = (href: string) => {
     setIsMobileMenuOpen(false);
 
-    if (href.startsWith("#")) {
+    if (href.includes("#")) {
+      const hash = href.slice(href.indexOf("#"));
+
       if (pathname !== "/") {
-        // Navigate to home page first, then scroll
-        window.location.href = `/${href}`;
+        window.location.href = href;
       } else {
-        const element = document.querySelector(href);
+        const element = document.querySelector(hash);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
@@ -58,54 +57,55 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+      className={`fixed top-0 z-50 w-full transition-all duration-500 ${
         isScrolled
-          ? "py-3 bg-white/90 backdrop-blur-xl shadow-lg"
-          : "py-5 bg-white/90 backdrop-blur-xl shadow-sm"
+          ? "bg-white/90 py-3 shadow-lg backdrop-blur-xl"
+          : "bg-white/90 py-5 shadow-sm backdrop-blur-xl"
       }`}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="flex justify-between items-center">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="flex items-center gap-2 text-blue-600 text-2xl font-bold hover:text-blue-700 transition-colors"
+            className="flex items-center gap-2 text-2xl font-bold text-blue-600 transition-colors hover:text-blue-700"
           >
-            <Code2 className="w-7 h-7" />
+            <Code2 className="h-7 w-7" />
             <span>Mohamed Ayad</span>
           </Link>
 
-          <ul className="hidden lg:flex items-center gap-10">
+          <ul className="hidden items-center gap-10 lg:flex">
             {navLinks.map((link) => {
               const Icon = link.icon;
-              const isActive = pathname === link.href;
+              const isHashLink = link.href.includes("#");
+              const isActive = !isHashLink && pathname === link.href;
 
               return (
                 <li key={link.href}>
-                  {link.href.startsWith("#") ? (
+                  {isHashLink ? (
                     <button
                       onClick={() => handleLinkClick(link.href)}
-                      className={`flex items-center gap-2 font-medium transition-all duration-300 relative group ${
+                      className={`group relative flex items-center gap-2 font-medium transition-all duration-300 ${
                         isActive
                           ? "text-blue-600"
                           : "text-gray-900 hover:text-blue-600"
                       }`}
                     >
-                      <Icon className="w-4 h-4 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                      <Icon className="h-4 w-4 -translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
                       <span>{link.label}</span>
-                      <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full group-hover:w-full transition-all duration-300" />
+                      <span className="absolute -bottom-2 left-0 h-0.5 w-0 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 transition-all duration-300 group-hover:w-full" />
                     </button>
                   ) : (
                     <Link
                       href={link.href}
-                      className={`flex items-center gap-2 font-medium transition-all duration-300 relative group ${
+                      className={`group relative flex items-center gap-2 font-medium transition-all duration-300 ${
                         isActive
                           ? "text-blue-600"
                           : "text-gray-900 hover:text-blue-600"
                       }`}
                     >
-                      <Icon className="w-4 h-4 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                      <Icon className="h-4 w-4 -translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
                       <span>{link.label}</span>
-                      <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full group-hover:w-full transition-all duration-300" />
+                      <span className="absolute -bottom-2 left-0 h-0.5 w-0 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 transition-all duration-300 group-hover:w-full" />
                     </Link>
                   )}
                 </li>
@@ -115,48 +115,49 @@ export const Navbar: React.FC = () => {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-gray-900 hover:text-blue-600 transition-colors"
+            className="text-gray-900 transition-colors hover:text-blue-600 lg:hidden"
           >
             {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
+              <X className="h-6 w-6" />
             ) : (
-              <Menu className="w-6 h-6" />
+              <Menu className="h-6 w-6" />
             )}
           </button>
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 py-4 border-t border-gray-200">
+          <div className="mt-4 border-t border-gray-200 py-4 lg:hidden">
             <ul className="flex flex-col gap-1">
               {navLinks.map((link) => {
                 const Icon = link.icon;
-                const isActive = pathname === link.href;
+                const isHashLink = link.href.includes("#");
+                const isActive = !isHashLink && pathname === link.href;
 
                 return (
                   <li key={link.href}>
-                    {link.href.startsWith("#") ? (
+                    {isHashLink ? (
                       <button
                         onClick={() => handleLinkClick(link.href)}
-                        className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all ${
+                        className={`flex w-full items-center gap-3 rounded-lg px-4 py-3 font-medium transition-all ${
                           isActive
                             ? "bg-blue-50 text-blue-600"
                             : "text-gray-900 hover:bg-gray-50"
                         }`}
                       >
-                        <Icon className="w-5 h-5" />
+                        <Icon className="h-5 w-5" />
                         <span>{link.label}</span>
                       </button>
                     ) : (
                       <Link
                         href={link.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all ${
+                        className={`flex w-full items-center gap-3 rounded-lg px-4 py-3 font-medium transition-all ${
                           isActive
                             ? "bg-blue-50 text-blue-600"
                             : "text-gray-900 hover:bg-gray-50"
                         }`}
                       >
-                        <Icon className="w-5 h-5" />
+                        <Icon className="h-5 w-5" />
                         <span>{link.label}</span>
                       </Link>
                     )}
