@@ -7,6 +7,7 @@ import {
   LayoutDashboard,
   ShoppingCart,
   Zap,
+  Workflow,
   LucideIcon,
 } from 'lucide-react';
 import { Section, SectionHeader } from '../ui/section';
@@ -18,6 +19,7 @@ const iconMap: Record<string, LucideIcon> = {
   Globe,
   ShoppingCart,
   Zap,
+  Workflow,
 };
 
 export const ServicesPreviewSection: React.FC = () => {

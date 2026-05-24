@@ -15,6 +15,30 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "ciko-bot",
+    title: "Ciko Bot Dashboard",
+    description:
+      "A comprehensive multi-tenant AI SaaS platform enabling store owners to manage bot integrations, orders, products, and analytics. It features real-time messaging quota tracking, automated order processing, and interactive AI-powered insights.",
+    company: "CikoBot",
+    technologies: [
+      "React 19",
+      "Node.js",
+      "Express",
+      "Vite",
+      "tRPC 11",
+      "Drizzle ORM",
+      "MySQL",
+      "Tailwind CSS 4",
+      "Recharts",
+      "AI Integration",
+    ],
+    category: "React.js , E-commerce",
+    gradient: "linear-gradient(135deg, #06b6d4 0%, #7c3aed 100%)",
+    logo: "images/projects/cikobot-logo.png",
+    url: "https://cikobot.com",
+    featured: true,
+  },
+  {
     id: "mark-haykalah",
     title: "Mark Haykalah",
     description:
@@ -66,7 +90,7 @@ export const projects: Project[] = [
     gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
     logo: "images/projects/torino_logo.png",
     url: "https://torinoelevators.com",
-    featured: true,
+    featured: false,
   },
   {
     id: "nasig-masr",

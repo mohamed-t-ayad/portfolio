@@ -41,14 +41,13 @@ export const HeroSection: React.FC = () => {
 
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Front-End Developer · React & Next.js
+            Front-End Developer · eCommerce & Automation Specialist
           </span>
         </h2>
 
         <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
-          Building high-performance, SEO-optimized web experiences with modern
-          JavaScript, scalable UI architecture, and conversion-focused eCommerce
-          solutions.
+          Building high-performance, SEO-optimized web experiences, full-stack
+          web applications with React/Next.js, and custom workflow automations using n8n.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

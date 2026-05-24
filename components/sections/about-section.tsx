@@ -36,8 +36,8 @@ export const AboutSection: React.FC = () => {
 
         <div className="lg:col-span-3">
           <p className="mb-6 text-xl font-semibold leading-relaxed text-gray-900 md:text-2xl">
-            Front-End Developer focused on fast, scalable, conversion-ready web
-            experiences.
+            Front-End & eCommerce Developer focused on high-performance web applications,
+            custom online stores, and n8n automation systems.
           </p>
 
           <div className="space-y-5 text-gray-600">

@@ -21,13 +21,14 @@ const alexandria = Alexandria({
 });
 
 export const metadata: Metadata = {
-  title: 'Mohamed Ayad - Full-Stack Web Developer',
-  description: 'Full-Stack Web Developer specializing in React, Next.js, WordPress, and Laravel. Building high-performance, responsive web applications.',
-  keywords: ['Web Developer', 'Full-Stack Developer', 'React', 'Next.js', 'WordPress', 'Laravel', 'Front-End Developer'],
+  metadataBase: new URL('https://mohamedayad.com'),
+  title: 'Mohamed Ayad - Front-End & eCommerce Developer',
+  description: 'Front-End & eCommerce Developer specializing in React, Next.js, custom Shopify/WordPress stores, and n8n workflow automation. Building high-performance web experiences.',
+  keywords: ['Web Developer', 'Front-End Developer', 'eCommerce Developer', 'React', 'Next.js', 'WordPress', 'Shopify Liquid', 'n8n Automation', 'SaaS', 'CikoBot', 'Salla', 'Zid'],
   authors: [{ name: 'Mohamed Ayad' }],
   openGraph: {
-    title: 'Mohamed Ayad - Full-Stack Web Developer',
-    description: 'Full-Stack Web Developer specializing in React, Next.js, WordPress, and Laravel.',
+    title: 'Mohamed Ayad - Front-End & eCommerce Developer',
+    description: 'Front-End & eCommerce Developer specializing in React, Next.js, custom Shopify/WordPress stores, and n8n workflow automation.',
     type: 'website',
   },
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Server, Layout, CloudUpload } from 'lucide-react';
+import { Code2, Server, ShoppingBag, Workflow } from 'lucide-react';
 import { Section, SectionHeader } from '../ui/section';
 
 const skillCategories = [
@@ -11,6 +11,7 @@ const skillCategories = [
       'Sass',
       'Bootstrap',
       'JavaScript (ES6+)',
+      'TypeScript',
       'React.js',
       'Next.js',
       'Tailwind CSS',
@@ -18,36 +19,40 @@ const skillCategories = [
   },
   {
     icon: Server,
-    title: 'Back-End & Tools',
+    title: 'Back-End & Databases',
     skills: [
-      'PHP',
-      'Laravel',
+      'Node.js',
+      'Express',
+      'tRPC',
+      'Drizzle ORM',
+      'Prisma ORM',
       'MySQL',
+      'PostgreSQL',
       'REST APIs',
-      'Git/GitHub',
-      'cPanel',
-      'N8N & Automation',
     ],
   },
   {
-    icon: Layout,
-    title: 'WordPress',
+    icon: ShoppingBag,
+    title: 'E-Commerce & CMS',
     skills: [
-      'Custom Themes',
+      'Shopify (Liquid)',
+      'Salla & Zid',
+      'WordPress',
       'Elementor',
-      'SEO',
       'WooCommerce',
-      'WP Rocket',
-      
+      'PageSpeed Optimization',
     ],
   },
   {
-    icon: CloudUpload,
-    title: 'Deployment & Hosting',
+    icon: Workflow,
+    title: 'DevOps & Automation',
     skills: [
-      'Vercel',
-      'DNS Setup',
-      'Migrations',
+      'n8n Workflow Automation',
+      'VPS Hosting (Ubuntu/SSH)',
+      'Docker & Traefik',
+      'Nginx',
+      'Let\'s Encrypt SSL',
+      'Git/GitHub',
     ],
   },
 ];

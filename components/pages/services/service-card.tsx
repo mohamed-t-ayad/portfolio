@@ -6,6 +6,7 @@ import {
   LucideIcon,
   ShoppingCart,
   Zap,
+  Workflow,
 } from 'lucide-react';
 import type { Service } from '@/data/services';
 
@@ -15,6 +16,7 @@ const iconMap: Record<string, LucideIcon> = {
   Globe,
   ShoppingCart,
   Zap,
+  Workflow,
 };
 
 type ServiceCardProps = {

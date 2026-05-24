@@ -11,21 +11,30 @@ import { Section, SectionHeader } from "../ui/section";
 const experiences = [
   {
     icon: LaptopMinimal,
+    period: "2025 - Present",
+    title: "SaaS Founder & Lead Architect",
+    company: "CikoBot (cikobot.com)",
+    description:
+      "Founded and engineered a live multi-tenant AI sales chatbot SaaS platform for Egyptian e-commerce businesses. Developed the React 19 dashboard, Node.js + Express API layer (tRPC v11), MySQL database integration (Drizzle ORM), n8n automation workflows, and deployed the containerized setup on Hostinger VPS using Docker, Traefik, and Let's Encrypt SSL.",
+    technologies: ["React 19", "Node.js", "tRPC 11", "Drizzle ORM", "n8n Automation", "Docker", "Traefik"],
+  },
+  {
+    icon: LaptopMinimal,
     period: "2024 - 2025",
-    title: "Front-End, Full-Stack & eCommerce Developer",
+    title: "Front-End & eCommerce Developer",
     company: "Mark",
     description:
-      "Built production-ready websites, dashboards, and full web applications for real business workflows. I worked across React.js and Next.js frontends while also delivering Node.js-powered backend logic, integrations, and scalable app architecture alongside eCommerce implementations.",
-    technologies: ["React.js", "Next.js", "Node.js", "Shopify", "Salla", "Zid"],
+      "Built production-ready websites, dashboards, and full-stack web applications for real business workflows. Worked across React.js and Next.js frontends while delivering Node.js-powered backend logic, REST APIs, and database integrations alongside e-commerce custom setups.",
+    technologies: ["React.js", "Next.js", "Node.js", "Shopify (Liquid)", "Salla", "Zid"],
   },
   {
     icon: ShoppingBag,
     period: "2022 - Present",
-    title: "Freelance eCommerce & Web App Developer",
+    title: "Freelance eCommerce & Web Developer",
     company: "Freelance",
     description:
-      "Delivered freelance work across eCommerce stores, internal dashboards, and custom web apps. My projects included frontend implementation, dashboard interfaces, app workflows, third-party integrations, and scalable solutions tailored to how each business actually operates.",
-    technologies: ["Shopify", "Salla", "Zid", "Dashboards", "Web Apps"],
+      "Delivered freelance projects across customized e-commerce stores and web applications. Implemented custom Shopify Liquid sections (such as interactive product bundle offers), responsive admin dashboards, API integrations, and tailored database solutions.",
+    technologies: ["Shopify Liquid", "React.js", "Next.js", "Salla & Zid", "APIs"],
   },
   {
     icon: Code2,

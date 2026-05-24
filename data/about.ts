@@ -29,15 +29,15 @@ export const cvLinks = {
 
 export const aboutStats: AboutStat[] = [
   { icon: 'award', value: '4+', label: 'Years Experience' },
-  { icon: 'projects', value: '40+', label: 'Projects Completed' },
-  { icon: 'clients', value: '30+', label: 'Happy Clients' },
+  { icon: 'projects', value: '50+', label: 'Projects Completed' },
+  { icon: 'clients', value: '35+', label: 'Happy Clients' },
 ];
 
 export const aboutBio = [
-  'I am a Front-End and full-stack-focused developer with 4+ years of experience building scalable websites, admin dashboards, custom web applications, and eCommerce platforms for real businesses.',
-  'My main strength is translating business needs and design into production-ready interfaces using React.js, Next.js, and Tailwind CSS, while also supporting backend logic and APIs with Node.js when the project needs a complete full-stack solution.',
-  'Alongside front-end engineering, I have strong hands-on experience with WordPress, Shopify, WooCommerce, Salla, Zid, and automation workflows using n8n. That gives me a practical edge when projects need both polished UI and business-ready execution.',
-  'I have worked across freelancer projects, client-facing production systems, dashboards, and multi-platform stores, collaborating with designers, backend teams, and business stakeholders to ship stable work that performs well and scales over time.',
+  'I am a Front-End and eCommerce Developer with 4+ years of experience building scalable websites, admin dashboards, custom web applications, and eCommerce platforms for real businesses.',
+  'My main strength is translating business needs and design into production-ready interfaces using React.js, Next.js, and Tailwind CSS, while also designing and developing full-stack web applications, integrating APIs, and building backend services with Node.js and databases when projects require end-to-end execution.',
+  'Alongside Front-End engineering, I have strong hands-on experience with popular eCommerce platforms including Shopify (custom Liquid sections), WooCommerce, Salla, and Zid, as well as building custom automation workflows using n8n. That gives me a practical edge when projects need both polished UI and seamless backend automation.',
+  'I am also the founder of CikoBot (a live multi-tenant AI-powered sales bot SaaS platform serving e-commerce businesses in Egypt), where I architected and implemented the entire product dashboard, database integrations, API endpoints, and VPS hosting infrastructure.',
 ];
 
 export const educationHistory: EducationItem[] = [

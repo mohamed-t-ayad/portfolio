@@ -24,6 +24,21 @@ export const services: Service[] = [
     gradient: 'from-blue-500 to-purple-600',
   },
   {
+    id: 'automation-systems',
+    title: 'Workflow & AI Automation',
+    description:
+      'Custom automation systems built with n8n to connect your e-commerce platforms, CRM, databases, and APIs. Build smart AI agents, webhook handlers, and automated messaging workflows that save hours of manual work.',
+    icon: 'Workflow',
+    features: [
+      'n8n workflow development',
+      'Webhook & API integrations',
+      'AI agents & chatbot setups',
+      'Database & CRM sync',
+      'Error handling & logging',
+    ],
+    gradient: 'from-violet-500 to-indigo-600',
+  },
+  {
     id: 'admin-dashboards',
     title: 'Admin Dashboards',
     description:

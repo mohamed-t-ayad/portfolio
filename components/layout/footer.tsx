@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
               <span>Mohamed Ayad</span>
             </Link>
             <p className="text-gray-400 max-w-sm">
-              Front-End & eCommerce Developer building high-converting stores,
+              Front-End & eCommerce Developer & SaaS Founder building high-converting stores,
               scalable web applications, and smart automation workflows using
               modern technologies and <span className="text-gray-300">n8n</span>.
             </p>
