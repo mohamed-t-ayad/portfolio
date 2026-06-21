@@ -15,6 +15,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "bruma-ecommerce",
+    title: "Bruma E-Commerce Platform",
+    description:
+      "A high-performance, full-stack e-commerce solution designed for both seamless customer shopping and effortless store management. Includes a dynamic storefront, comprehensive admin dashboard, and intuitive drag-and-drop layout control. Note: You can log in using the provided demo button.",
+    company: "Bruma",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma ORM",
+      "MySQL",
+      "Framer Motion",
+    ],
+    category: "Next.js , E-commerce",
+    gradient: "linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%)",
+    logo: "images/projects/bruma-logo.png",
+    url: "https://bruma.ayad.cloud/",
+    featured: true,
+  },
+  {
     id: "ciko-bot",
     title: "Ciko Bot Dashboard",
     description:

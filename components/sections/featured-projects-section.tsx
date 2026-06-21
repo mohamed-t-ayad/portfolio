@@ -6,7 +6,7 @@ import { ProjectCard } from '../ui/project-card';
 import { getFeaturedProjects } from '@/data/projects';
 
 export const FeaturedProjectsSection: React.FC = () => {
-  const featuredProjects = getFeaturedProjects().slice(0, 4);
+  const featuredProjects = getFeaturedProjects().slice(0, 5);
 
   return (
     <Section id="projects" className="bg-gray-50">
