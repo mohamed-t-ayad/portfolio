@@ -73,7 +73,7 @@ export type BlogPost = {
 export const posts: BlogPost[] = [
   {
     slug: 'vps-migration-17-subdomains',
-    title: 'ازاى نقلت موقع ضخم بـ 17 ساب دومين لسيرفر جديد بدون ما أغيّر سطر كود واحد',
+    title: 'ازاى  نقلت موقع ضخم بـ 17 ساب دومين لسيرفر جديد بدون ما أغيّر سطر كود واحد',
     subtitle:
       'رحلة نقل منظومة مواقع متكاملة من VPS قديم لسيرفر جديد — بكل التفاصيل والتحديات الحقيقية',
     category: 'DevOps',
