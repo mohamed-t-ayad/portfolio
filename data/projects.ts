@@ -31,7 +31,7 @@ export const projects: Project[] = [
     ],
     category: "Next.js , E-commerce",
     gradient: "linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%)",
-    logo: "images/projects/bruma-logo.jpg",
+    logo: "images/projects/bruma-logo.png",
     url: "https://bruma.ayad.cloud/",
     featured: true,
   },
