@@ -71,7 +71,7 @@ export const projects: Project[] = [
     // icon: "globe",
     logo: "images/projects/mark-logo.png",
     url: "https://mark.haykalah.com",
-    featured: true,
+    featured: false,
   },
    {
     id: "femu-store",
@@ -92,6 +92,27 @@ export const projects: Project[] = [
     gradient: "linear-gradient(135deg, #f83600 0%, #f9d423 100%)",
     logo: "images/projects/FEMU.png",
     url: "https://femu.me/",
+    featured: true,
+  },
+  {
+    id: "doha-silver-store",
+    title: "Doha Silver Store",
+    description:
+      "Redesigned and transformed an existing Shopify store from a basic free theme into a premium, high-converting luxury e-commerce experience for silver jewelry and products. Fully developed using custom Shopify Liquid, featuring modular custom sections, refined typography and aesthetics, responsive UI/UX, and optimized performance.",
+    company: "Doha Silver",
+    technologies: [
+      "Shopify",
+      "Custom Liquid",
+      "Theme Development",
+      "UI/UX Redesign",
+      "E-commerce",
+      "Responsive Design",
+      "Performance Optimization",
+    ],
+    category: "E-commerce",
+    gradient: "linear-gradient(135deg, #2c3e50 0%, #bdc3c7 100%)",
+    logo: "images/projects/doha-logo.png",
+    url: "https://www.dohasilverstore.com/",
     featured: true,
   },
   {
@@ -137,7 +158,7 @@ export const projects: Project[] = [
     gradient: "linear-gradient(135deg, #4568dc 0%, #b06ab3 100%)",
     logo: "images/projects/fina_logo.svg",
     url: "https://fina.haykalah.com/",
-    featured: true,
+    featured: false,
   },
   {
     id: "Haykalah",
