@@ -21,7 +21,7 @@ const alexandria = Alexandria({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mohamedayad.com'),
+  metadataBase: new URL('https://ayad.cloud'),
   title: 'Mohamed Ayad - Front-End & eCommerce Developer',
   description: 'Front-End & eCommerce Developer specializing in React, Next.js, custom Shopify/WordPress stores, and n8n workflow automation. Building high-performance web experiences.',
   keywords: ['Web Developer', 'Front-End Developer', 'eCommerce Developer', 'React', 'Next.js', 'WordPress', 'Shopify Liquid', 'n8n Automation', 'SaaS', 'CikoBot', 'Salla', 'Zid'],
